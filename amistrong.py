@@ -61,7 +61,7 @@ def main():
     yuezhi = input('月支：')
 
     result = amistrong({ 'rigan': rigan, 'yuezhi': yuezhi })
-    print(f'{'身强' if result.get('is_strong') else '身弱'}，喜用{''.join(result.get('favorable_wuxing'))}。')
+    print(f'{'身强' if result.get('is_strong') else '身弱'}，喜用{'、'.join(result.get('favorable_wuxing'))}。')
 
 
 if __name__ == '__main__':
